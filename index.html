@@ -65,7 +65,8 @@ img,svg{max-width:100%}
 .t .in{max-width:40rem;margin:0 auto}
 .t .body{font-size:clamp(1.1rem,3.4vw,1.4rem);line-height:1.72}
 .t .big{margin:0;font:900 clamp(1.6rem,6vw,3rem)/1.3 var(--serif);text-align:center;overflow-wrap:break-word}
-.t blockquote{margin:1.5rem 0 0;padding-left:1.1rem;border-left:5px solid var(--accent);font:600 italic clamp(1.2rem,4.4vw,1.9rem)/1.5 var(--serif)}
+.t .takeaway{margin:1.5rem 0 0;padding-left:1.1rem;border-left:5px solid var(--accent);font:600 clamp(1.2rem,4.4vw,1.9rem)/1.5 var(--serif)}
+.t .takeaway span{display:block;margin-bottom:.5rem;font:600 .8rem/1.3 var(--sans);color:var(--accent)}
 
 /* --- Text + visual: phone/tablet portrait = visual pinned on top of its own section --- */
 .tv{display:flex;flex-direction:column}
@@ -251,8 +252,8 @@ img,svg{max-width:100%}
       <h2>The Academic Surge (TOPIK)</h2>
       <p class="body">Official TOPIK (Test of Proficiency in Korean) figures reflect a similar upward trend following the lifting of pandemic restrictions. The language barrier is no longer a deterrent. It is a hurdle Indian students are actively rushing to clear.</p>
       <div class="pair">
-        <div><span>Applications</span><b>1,383 → 2,928</b><em>More than doubled by 2025</em></div>
-        <div><span>Actual test-takers</span><b>1,052 → 2,122</b><em>Sustained testing growth</em></div>
+        <div><span>Applications</span><b>1,383 → 2,928</b><em>More than doubled between 2022 and 2025</em></div>
+        <div><span>Actual test-takers</span><b>1,052 → 2,122</b><em>Sustained testing growth, 2022 to 2025</em></div>
       </div>
     </div>
   </section>
@@ -261,7 +262,7 @@ img,svg{max-width:100%}
   <section class="beat v" style="--prev:#DCE9FF">
     <div class="vstick">
       <div class="vhead"><h2>TOPIK in India</h2><p>Scroll to watch applications and test-takers climb</p></div>
-      <div class="viz wide" data-viz="topik" role="group" aria-label="Chart: TOPIK applications grew from 1,383 to 2,928 and test-takers from 1,052 to 2,122"></div>
+      <div class="viz wide" data-viz="topik" role="group" aria-label="Chart: TOPIK applications grew from 1,383 in 2022 to 2,928 in 2025, and test-takers from 1,052 in 2022 to 2,122 in 2025"></div>
     </div>
   </section>
 
@@ -297,7 +298,7 @@ img,svg{max-width:100%}
       <span class="tag">Conclusion: Future horizons</span>
       <h2>Beyond the Screen</h2>
       <p class="body">Interviews with Korean-language teachers conducted through the Republic of Korea’s Embassy in India suggest that parents are actively encouraging young people to pursue opportunities in Korea as traditional Anglocentric education routes become increasingly saturated.</p>
-      <blockquote>“Language proficiency alone is insufficient and should be combined with expertise in fields such as STEM, semiconductors, or corporate trade to secure strategic employment.”</blockquote>
+      <div class="takeaway"><span>Takeaway from interviews with two Korean-language teachers</span>Language proficiency alone is insufficient and should be combined with expertise in fields such as STEM, semiconductors, or corporate trade to secure strategic employment.</div>
     </div>
   </section>
 
@@ -417,7 +418,7 @@ img,svg{max-width:100%}
           <div><div class="rl"><span>Applications</span><span class="chip xa">×1.0</span><b class="na">1,383</b></div><div class="trk"><i class="g1 fa"></i><u style="left:43.2%"></u></div></div>
           <div><div class="rl"><span>Test-takers</span><span class="chip xb">×1.0</span><b class="nb">1,052</b></div><div class="trk"><i class="g2 fb"></i><u style="left:32.9%"></u></div></div>
         </div>
-        <p class="src">White tick = starting figure. Motion is animated between the two reported figures. Source: official TOPIK data.</p>`,
+        <p class="src">White tick = starting figure. Both figures run from 2022 to 2025. Motion is animated between the two reported figures, not year-by-year data. Source: official TOPIK data.</p>`,
       init(root){
         const q=s=>root.querySelector(s);
         return p=>{
